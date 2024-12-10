@@ -17,4 +17,3 @@ This directory has all the images used in the project.
 ![checkmark--outline](https://github.com/user-attachments/assets/ac137983-3b69-4031-9442-a590ca98de83)
 ![bullet](https://github.com/user-attachments/assets/7fcfefd1-dcd7-465e-8426-00e74e95df16)
 ![ai1](https://github.com/user-attachments/assets/22a5952b-baf5-4638-857f-1112ab58fd82)
-![ai](https://github.com/user-attachments/assets/d3dc58e2-fc88-4215-bc5f-fc80aecbeee7)
