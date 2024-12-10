@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Aguilar - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Daniel Aguilar
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          mystechdevelopment@proton.me
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +17377326662
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/menupic.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Daniel Aguilar! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a computer science enthusiast, looking to become a jack of all trades in the computer and robotics world!
+            I have worked on deploying artificial intelligence services across local devices while also planning to move them into enterprise level.
+            I work particularly with Edge AI and utilizing services such as OpenAI's API and many others.
+          </p>
+      </div>
+    </section>
+              
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div style="clear: both;"></div>
+
+  <div class="all_skills">
+    <div class="skill">
+      <img src="html_finalprojimages/html5.png" alt="HTML Icon"/>
+      <h6>HTML</h6>
+      <p>1 year experience</p>
+    </div>
+
+    <div class="skill">
+      <img src="html_finalprojimages/js.jpeg" alt="JavaScript Icon"/>
+      <h6>JavaScript</h6>
+      <p>2 years experience</p>
+    </div>
+
+    <div class="skill">
+      <img src="html_finalprojimages/ai1.jpg" alt="Artificial Intelligence Icon"/>
+      <h6>Artificial Intelligence</h6>
+      <p>2 years experience</p>
+    </div>
+
+    <div class="skill">
+      <img src="html_finalprojimages/csharp.png" alt="C# Icon"/>
+      <h6>C#</h6>
+      <p>1 year experience</p>
+    </div>
+
+    <div class="skill">
+      <img src="html_finalprojimages/python.png" alt="Python Icon"/>
+      <h6>Python</h6>
+      <p>2 years experience</p>
+    </div>
+  </div>
+</section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both;"></div>
+    
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <ul>
+            <li>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase personal projects and skills.</li>
+          </ul>
+        </div>
+        <hr>
+    
+        <div class="project-card">
+          <h3>Task Management App</h3>
+          <ul>
+            <li>Built a task management application with features like task creation, due dates, and priority settings using React and Node.js.</li>
+          </ul>
+        </div>
+        <hr>
+    
+        <div class="project-card">
+          <h3>Weather Dashboard</h3>
+          <ul>
+            <li>Created a weather dashboard using APIs to display real-time weather data and forecasts for multiple cities, built with JavaScript and Bootstrap.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daniel is an exceptionally quick learner who readily grasps key concepts in web development. 
+          He maintains a positive attitude and demonstrates excellent teamwork skills.
+          His inquisitive nature allows him to ask insightful questions, and he consistently takes initiative. 
+          He also shows strong potential for leadership within a team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Daniel has been an outstanding experience. 
+          He possesses deep knowledge of his field and always goes the extra mile to ensure high-quality results. 
+          For any future projects requiring his expertise, I would gladly collaborate with him again
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Daniel during the early phase of our venture, which involved web development. 
+          He is a dedicated professional with in-depth knowledge of the domain. 
+          His commitment and expertise make him a valuable asset to any organization. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+<!-- Recommendation Form -->
+<section id="contact">
+  <div class="flex_center">
+    <fieldset>
+      <legend class="introduction">Leave a Recommendation</legend>          
+      <textarea id="new_recommendation" cols="50" rows="5" placeholder="Write your recommendation here..."></textarea>
+      <div class="flex_center">
+        <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+      </div>
+    </fieldset>
+  </div>
+</section>
+
+<!-- Pop-up Confirmation -->
+<div class="popup" id="popup">
+  <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark"/>
+  <h3>Recommendation added successfully!</h3>
+  <button onclick="showPopup(false)">Ok</button>
+</div>
+
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
